@@ -7,11 +7,7 @@ int main(void)
     int game;
 
     printf("Choose game (1 or 2): ");
-    if (scanf("%d", &game) != 1)
-    {
-        printf("Invalid game choice.\n");
-        return 1;
-    }
+    scanf("%d", &game);
 
     srand(time(NULL));
 
